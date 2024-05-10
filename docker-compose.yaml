@@ -21,10 +21,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9559
-      - 19559
-      - 19560
     volumes:
       - ./data/meta0:/data/meta
       - ./logs/meta0:/logs
@@ -55,10 +51,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9559
-      - 19559
-      - 19560
     volumes:
       - ./data/meta1:/data/meta
       - ./logs/meta1:/logs
@@ -89,10 +81,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9559
-      - 19559
-      - 19560
     volumes:
       - ./data/meta2:/data/meta
       - ./logs/meta2:/logs
@@ -127,10 +115,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9779
-      - 19779
-      - 19780
     volumes:
       - ./data/storage0:/data/storage
       - ./logs/storage0:/logs
@@ -165,10 +149,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9779
-      - 19779
-      - 19780
     volumes:
       - ./data/storage1:/data/storage
       - ./logs/storage1:/logs
@@ -203,10 +183,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9779
-      - 19779
-      - 19780
     volumes:
       - ./data/storage2:/data/storage
       - ./logs/storage2:/logs
@@ -240,10 +216,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - "9669:9669"
-      - 19669
-      - 19670
     volumes:
       - ./logs/graph:/logs
     networks:
@@ -276,10 +248,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9669
-      - 19669
-      - 19670
     volumes:
       - ./logs/graph1:/logs
     networks:
@@ -312,10 +280,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 20s
-    ports:
-      - 9669
-      - 19669
-      - 19670
     volumes:
       - ./logs/graph2:/logs
     networks:
